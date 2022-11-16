@@ -10,10 +10,8 @@ jobs:
       - run:
           name: Install dependencies
           command: |
-            install \
-              openjdk11-jre==11.0.5_p10-r0 \
-              docker-compose==1.12.0 \
-              maven==0.0.6 \
+            apk add \
+              openjdk8=8.252.09-r0
       - restore_cache:
           keys:
             - v1-{{ .Branch }}
