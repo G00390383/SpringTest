@@ -11,7 +11,7 @@ jobs:
           name: Install dependencies
           command: |
             apk add \
-              openjdk8=8.252.09-r0
+              openjdk8=8.252.09-r0  \
       - restore_cache:
           keys:
             - v1-{{ .Branch }}
